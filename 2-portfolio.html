@@ -12,17 +12,14 @@
 <meta name name="author" content="Laureen Petrocchi">
 
 <style>
-
 /* Alternate: <body style="height: expand;"> */
 /* html, body {
     height: 100%;
 } */
-
 header {
     background: linear-gradient(to top, #ffffff 0%, #99ccff 100%);
     text-align: center;
 }
-
 .core {
     background: linear-gradient(to top, #ffffff 0%, #99ccff 100%);
     box-sizing: border-box;
@@ -34,11 +31,9 @@ header {
    background-color: white;
 }
 */
-
 .a:hover {
     background-color: gray !important;
 }
-
 footer {
     bottom: 0;
     width: 100%;
@@ -46,7 +41,52 @@ footer {
     background: linear-gradient(to bottom, #ffffff 0%, #99ccff 100%);
     color: black;
     border-top: 2px solid black;
-}      
+}  
+
+.button-color01 {
+    color: #F1948A;
+    width: 250px;
+}
+
+.button-color02 {
+    color: #E59866;
+    width: 250px;
+}
+
+.button-color03 {
+    color: #F7DC6F;
+    width: 250px;
+}
+
+.button-color04 {
+    color: #82E0AA;
+    width: 250px;
+}
+
+.button-color05 {
+    color: #85C1E9;
+    width: 250px;
+}
+
+.button-color06 {
+    color: #BB8FCE;
+    width: 250px;
+}
+
+.button-color07 {
+    color: #99A3A4;
+    width: 250px;
+}
+
+.button-color08 {
+    color: #FFFFFF;
+    width: 250px;
+}
+
+.button-color09 {
+    color: #000000;
+    width: 250px;
+}
 
 </style>
 
@@ -86,20 +126,47 @@ footer {
 </header>
         
         <div class="core">
-            <h2 class="text-center" style="color: #0000ff;">My Portfolio</h2>
-            <div class="container">
-            <table class="table table-striped" style="margin-top: 20px;" border="3px">
-               <tr>
-                 <th scope="col" class="text-center">Symbol</th>
-                 <th class="text-center">Last Price</th>
-                 <th class="text-center">Change</th>
-                 <th class="text-center">% Chg</th>
-                 <th class="text-center">Volume</th>
-                 <th class="text-center">52 Week Low</th>
-                 <th class="text-center">52 Week High</th>
-                 <th class="text-center">Martket Cap</th>
+            <div class = "row">
+            <div class = "col-sm-4">
+                 <div class = "container" style = "padding: 25px;">
+                 <h1 class="" style="color: black; margin: 10px 0 5px 0; text-align: center;">My Portfolio</h1> 
+                 <h2 class="" style="color: black; margin: 0 0 10px 0; text-align: center;">by Industrial Sector</h2> 
+                 <p><ul style="list-style-type: none; text-align: center; margin-left: 0;">
+                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg button-color01">
+                            <span style="font-weight: bold">Healthcare Sector</span></button></a></li>
+                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg button-color02">
+                            <span style="font-weight: bold">Industrial Goods Sector</span></button></a></li>
+                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg button-color03">
+                            <span style="font-weight: bold">Basic Materials Sector</span></button></a></li>
+                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg button-color04">
+                            <span style="font-weight: bold">Financial Sector</span></button></a></li>
+                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg button-color05">
+                            <span style="font-weight: bold">Utilities Sector</span></button></a></li>
+                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg button-color06">
+                            <span style="font-weight: bold">Services Sector</span></button></a></li>
+                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg button-color07">
+                            <span style="font-weight: bold">Consumer Goods Sector</span></button></a></li>
+                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg button-color08">
+                            <span style="font-weight: bold">Technology Sector</span></button></a></li>
+                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg button-color09">
+                            <span style="font-weight: bold">Conglomerates Sector</span></button></a></li>
+                    </ul></p>
+                 </div> <!-- container -->
+            </div> <!-- smaller column -->
+            <div class = "col-sm-8">
+            <div class = "container" style = "padding: 10px;">
+            <table class="table" style="margin: 20px 0 0 0;" border="3px">
+               <tr class="" style="background-color: black; color: white;">
+                 <th scope="col" class="text-center">SYMBOL</th>
+                 <th class="text-center" >LAST PRICE</th>
+                 <th class="text-center" >CHANGE</th>
+                 <th class="text-center" >% CHANGE</th>
+                 <th class="text-center" >VOLUME</th>
+                 <th class="text-center" >52 WEEK LOW</th>
+                 <th class="text-center" >52 WEEK LOW</th>
+                 <th class="text-center" >MARKET CAP</th>
                 </tr>
-               <tr> 
+               <tr class="" style="background-color: #F1948A; color: white;"> 
                  <!-- <a href="#" target="_blank"><th class="text-center"> SYM </th></a> -->
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
@@ -110,7 +177,7 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr>
-               <tr>
+               <tr class="" style="background-color: #E59866; color: white;"> 
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
                  <td class="text-center" > Ch </td>
@@ -120,7 +187,7 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr>
-               <tr>
+               <tr class="" style="background-color: #F7DC6F; color: white;"> 
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
                  <td class="text-center" > Ch </td>
@@ -130,7 +197,7 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr>
-               <tr>
+               <tr class="" style="background-color: #82E0AA; color: white;"> 
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
                  <td class="text-center" > Ch </td>
@@ -140,7 +207,7 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr>
-               <tr>
+               <tr class="" style="background-color: #85C1E9; color: white;"> 
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
                  <td class="text-center" > Ch </td>
@@ -150,7 +217,7 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr>
-               <tr>
+               <tr class="" style="background-color: #BB8FCE; color: white;"> 
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
                  <td class="text-center" > Ch </td>
@@ -160,7 +227,7 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr>
-               <tr>
+               <tr class="" style="background-color: #BFC9CA; color: white;"> 
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
                  <td class="text-center" > Ch </td>
@@ -170,8 +237,7 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr>
-               
-               <tr>
+               <tr class="" style="background-color: white; color: black;"> 
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
                  <td class="text-center" > Ch </td>
@@ -181,7 +247,7 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr>
-               <tr>
+              <tr class="" style="background-color: white; color: black;">
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
                  <td class="text-center" > Ch </td>
@@ -191,7 +257,7 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr>
-                <tr>
+               <tr class="" style="background-color: white; color: black;">
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
                  <td class="text-center" > Ch </td>
@@ -201,7 +267,7 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr>
-               <tr>
+               <tr class="" style="background-color: white; color: black;">
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
                  <td class="text-center" > Ch </td>
@@ -211,7 +277,7 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr>
-               <tr>
+               <tr class="" style="background-color: white; color: black;"> 
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
                  <td class="text-center" > Ch </td>
@@ -221,9 +287,20 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr> 
-               
+               <tr class="" style="background-color: ; color: white;">
+                 <th class="text-center" style="background-color: black; color: white;"><a href="#" target="_blank"> SYM </a></th>
+                 <td class="text-center" style="background-color: black; color: white;" > LP </td>
+                 <td class="text-center" style="background-color: black; color: white;" > Ch </td>
+                 <td class="text-center" style="background-color: black; color: white;" > %Ch </td>
+                 <td class="text-center" style="background-color: black; color: white;" > V </td>
+                 <td class="text-center" style="background-color: black; color: white;" > 52 Wk L </td>
+                 <td class="text-center" style="background-color: black; color: white;" > 52 Wk H </td>
+                 <td class="text-center" style="background-color: black; color: white;" > Mkt Cap </td>
+               </tr> 
             </table> <!-- not necessary? -->
             </div> <!-- container -->
+            </div> <!-- larger column -->
+            </div> <!-- row -->
         </div> <!-- core -->
 
         <footer>
