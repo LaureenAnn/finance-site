@@ -6,12 +6,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+<link rel="stylesheet" href="css/animate.css">
 <meta charset="UTF-8">
 <meta name name="description" content="yahoo finance pages mock">
 <meta name name="keywords" content="finance, investment">
 <meta name name="author" content="Laureen Petrocchi">
 
-<style>
+<style> /* <style type="text/css"> */
 /* Alternate: <body style="height: expand;"> */
 /* html, body {
     height: 100%;
@@ -26,11 +27,6 @@ header {
     /* height: 100%; */
 }
 
-/*
-.a {
-   background-color: white;
-}
-*/
 .a:hover {
     background-color: gray !important;
 }
@@ -43,50 +39,103 @@ footer {
     border-top: 2px solid black;
 }  
 
-.button-color01 {
-    color: #F1948A;
+.sector-color0 {
+    background-color: black;
+    color: white;
+    text-decoration: none;
     width: 250px;
+    border: solid white 1px;
+    border-radius: 0;
 }
 
-.button-color02 {
-    color: #E59866;
+.sector-color01 {
+    background-color: #F1948A;
+    color: black;
+    text-decoration: none;
     width: 250px;
+    border: solid black 1px ;
+    border-radius: 0;
 }
 
-.button-color03 {
-    color: #F7DC6F;
+.sector-color02 {
+    background-color: #E59866;
+    color: black;
+    font-weight: normal;
     width: 250px;
+    border: solid black 1px;
+    border-radius: 0;
 }
 
-.button-color04 {
-    color: #82E0AA;
+.sector-color03 {
+    background-color: #F7DC6F;
+    color: black;
+    font-weight: normal;
     width: 250px;
+    border: solid black 1px;
+    border-radius: 0;
 }
 
-.button-color05 {
-    color: #85C1E9;
+.sector-color04 {
+    background-color: #82E0AA;
+    color: black;
+    font-weight: normal;
     width: 250px;
+    border: solid black 1px;
+    border-radius: 0;
 }
 
-.button-color06 {
-    color: #BB8FCE;
+.sector-color05 {
+    background-color: #85C1E9;
+    color: black;
+    font-weight: normal;
     width: 250px;
+    border: solid black 1px;
+    border-radius: 0;
 }
 
-.button-color07 {
-    color: #99A3A4;
+.sector-color06 {
+    background-color: #BB8FCE;
+    color: black;
+    font-weight: normal;
     width: 250px;
+    border: solid black 1px;
+    border-radius: 0;
 }
 
-.button-color08 {
-    color: #FFFFFF;
+.sector-color07 {
+    background-color: #99A3A4;
+    color: black;
+    font-weight: normal;
     width: 250px;
+    border: solid black 1px;
+    border-radius: 0;
 }
 
-.button-color09 {
-    color: #000000;
+.sector-color08 {
+    background-color: white;
+    color: black;
+    font-weight: normal;
     width: 250px;
+    border: solid black 1px;
+    border-radius: 0;
 }
+
+.sector-color09 {
+    background-color: black;
+    color: white;
+    font-weight: normal;
+    width: 250px;
+    border: solid white 1px;
+    border-radius: 0;
+}
+
+/* #target01, #target02 {
+    -webkit-animation-name: shake;
+    -webkit-animation-delay: 30s;
+    -webkit-animation-duration: 120s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+} */
 
 </style>
 
@@ -96,31 +145,39 @@ footer {
 <header>
     <nav class="navbar navbar-expand-lg" style="border-bottom: 2px solid black; margin:0; color:black; text-align: center;">
         <div class="col-sm">
-            <h1 style="">SafeWatch Financial</h1>
+            <h1>SafeWatch Financial</h1>
         </div>
         <div class="col-sm">
             <a class="nav-item nav-link" href="#"><img src="images/eye-transp.png" alt="eye" align="middle" width="200px" height="100px"></a>
         </div>
         <div class="col-sm">
-            <h2 style="">We watch out for your investments.</h2>
+            <h2>We watch out for your investments.</h2>
         </div>
     </nav> 
     
     <nav class="nav nav-fill" style="border-bottom: 2px solid black; margin:0;">
             <div class="col-sm a">
-                <a class="nav-item nav-link" href="#"><h2 class="" style="text-align: center; color: #0000ff; height: 20px;">My Watchlists</h2></a>
+                <a class="nav-item nav-link" href="#"><h2 style="text-align: center; color: #0000ff; height: 20px;">My Watchlists</h2></a>
             </div>
             <div class="col-sm a">
-                <a class="nav-item nav-link" href="#"><h2 class="" style="text-align: center; color: #0000ff; height: 20px;">Events</h2></a>
+                <a class="nav-item nav-link" href="#"><h2 style="text-align: center; color: #0000ff; height: 20px;">Events</h2></a>
+            </div>
+            <div class="col-sm a dropdown">
+                <a class="nav-item nav-link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><h2 style="text-align: center; color: #0000ff; height: 20px;">Personal Finance</h2></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item a" style="text-align: left; color: #0000ff;" href="#">Budgeting</a>
+                        <a class="dropdown-item a" style="text-align: left; color: #0000ff;" href="#">Debt Elimination</a>
+                        <a class="dropdown-item a" style="text-align: left; color: #0000ff;" href="#">Saving for Emergencies</a>
+                        <a class="dropdown-item a" style="text-align: left; color: #0000ff;" href="#">Saving for Retirement</a>
+                        <a class="dropdown-item a" style="text-align: left; color: #0000ff;" href="#">Saving for College</a>
+                        <a class="dropdown-item a" style="text-align: left; color: #0000ff;" href="#">Teaching Your Children Well</a>
+                    </div>
             </div>
             <div class="col-sm a">
-                <a class="nav-item nav-link" href="#"><h2 class="" style="text-align: center; color: #0000ff; height: 20px;">Personal Finance</h2></a>
+                <a class="nav-item nav-link" href="#"><h2 style="text-align: center; color: #0000ff; height: 20px;">My Broker</h2></a>
             </div>
             <div class="col-sm a">
-                <a class="nav-item nav-link" href="#"><h2 class="" style="text-align: center; color: #0000ff; height: 20px;">My Broker</h2></a>
-            </div>
-            <div class="col-sm a">
-                <a class="nav-item nav-link" href="#"><h2 class="" style="text-align: center; color: #0000ff; height: 20px;">My Portfolio</h2></a>
+                <a class="nav-item nav-link" href="#"><h2 style="text-align: center; color: #0000ff; height: 20px;">My Portfolio</h2></a>
             </div>
 
 </header>
@@ -128,35 +185,36 @@ footer {
         <div class="core">
             <div class = "row">
             <div class = "col-sm-4">
-                 <div class = "container" style = "padding: 25px;">
-                 <h1 class="" style="color: black; margin: 10px 0 5px 0; text-align: center;">My Portfolio</h1> 
-                 <h2 class="" style="color: black; margin: 0 0 10px 0; text-align: center;">by Industrial Sector</h2> 
+                 <div class = "container">
+                 <h1 style="color: black; margin: 10px 0 0 50px; text-align: center;">My Portfolio</h1> 
+                 <h2 style="color: black; margin: 0 0 0 40px; text-align: center;">by Industrial Sector</h2> 
+                 <h3 style="color: black; margin: 0 0 15px 40px; text-align: center;">with legend and links</h3>
                  <p><ul style="list-style-type: none; text-align: center; margin-left: 0;">
-                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg button-color01">
-                            <span style="font-weight: bold">Healthcare Sector</span></button></a></li>
-                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg button-color02">
-                            <span style="font-weight: bold">Industrial Goods Sector</span></button></a></li>
-                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg button-color03">
-                            <span style="font-weight: bold">Basic Materials Sector</span></button></a></li>
-                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg button-color04">
-                            <span style="font-weight: bold">Financial Sector</span></button></a></li>
-                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg button-color05">
-                            <span style="font-weight: bold">Utilities Sector</span></button></a></li>
-                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg button-color06">
-                            <span style="font-weight: bold">Services Sector</span></button></a></li>
-                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg button-color07">
-                            <span style="font-weight: bold">Consumer Goods Sector</span></button></a></li>
-                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg button-color08">
-                            <span style="font-weight: bold">Technology Sector</span></button></a></li>
-                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg button-color09">
-                            <span style="font-weight: bold">Conglomerates Sector</span></button></a></li>
+                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg sector-color01">
+                            <span>Healthcare Sector</span></button></a></li>
+                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg sector-color02">
+                            <span>Industrial Goods Sector</span></button></a></li>
+                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg sector-color03">
+                            <span>Basic Materials Sector</span></button></a></li>
+                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg sector-color04">
+                            <span>Financial Sector</span></button></a></li>
+                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg sector-color05">
+                            <span>Utilities Sector</span></button></a></li>
+                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg sector-color06">
+                            <span>Services Sector</span></button></a></li>
+                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg sector-color07">
+                            <span>Consumer Goods Sector</span></button></a></li>
+                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg sector-color08">
+                            <span>Conglomerates Sector</span></button></a></li>
+                        <li style="margin-bottom: 12px"><a class="link" style="color: black;" href="#"><button type="button" class="btn btn-lg sector-color09">
+                            <span>Technology Sector</span></button></a></li>
                     </ul></p>
                  </div> <!-- container -->
             </div> <!-- smaller column -->
             <div class = "col-sm-8">
-            <div class = "container" style = "padding: 10px;">
-            <table class="table" style="margin: 20px 0 0 0;" border="3px">
-               <tr class="" style="background-color: black; color: white;">
+            <div class = "container" style = "padding: 10px 30px 30px 30px;">
+            <table class="table table-dark" style="margin: 20px 0 0 0;" border="3px">
+               <tr class="sector-color0">
                  <th scope="col" class="text-center">SYMBOL</th>
                  <th class="text-center" >LAST PRICE</th>
                  <th class="text-center" >CHANGE</th>
@@ -166,7 +224,7 @@ footer {
                  <th class="text-center" >52 WEEK LOW</th>
                  <th class="text-center" >MARKET CAP</th>
                 </tr>
-               <tr class="" style="background-color: #F1948A; color: white;"> 
+               <tr class="sector-color01"> 
                  <!-- <a href="#" target="_blank"><th class="text-center"> SYM </th></a> -->
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
@@ -177,7 +235,7 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr>
-               <tr class="" style="background-color: #E59866; color: white;"> 
+               <tr class="sector-color02"> 
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
                  <td class="text-center" > Ch </td>
@@ -187,7 +245,7 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr>
-               <tr class="" style="background-color: #F7DC6F; color: white;"> 
+               <tr class="sector-color03"> 
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
                  <td class="text-center" > Ch </td>
@@ -197,7 +255,7 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr>
-               <tr class="" style="background-color: #82E0AA; color: white;"> 
+               <tr class="sector-color04">  
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
                  <td class="text-center" > Ch </td>
@@ -207,7 +265,7 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr>
-               <tr class="" style="background-color: #85C1E9; color: white;"> 
+              <tr class="sector-color05">  
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
                  <td class="text-center" > Ch </td>
@@ -217,7 +275,7 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr>
-               <tr class="" style="background-color: #BB8FCE; color: white;"> 
+               <tr class="sector-color06"> 
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
                  <td class="text-center" > Ch </td>
@@ -227,7 +285,7 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr>
-               <tr class="" style="background-color: #BFC9CA; color: white;"> 
+               <tr class="sector-color07"> 
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
                  <td class="text-center" > Ch </td>
@@ -237,7 +295,7 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr>
-               <tr class="" style="background-color: white; color: black;"> 
+               <tr class="sector-color08"> 
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
                  <td class="text-center" > Ch </td>
@@ -247,7 +305,7 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr>
-              <tr class="" style="background-color: white; color: black;">
+              <tr class="sector-color09"> 
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
                  <td class="text-center" > Ch </td>
@@ -257,7 +315,7 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr>
-               <tr class="" style="background-color: white; color: black;">
+               <tr class="sector-color09"> 
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
                  <td class="text-center" > Ch </td>
@@ -267,7 +325,7 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr>
-               <tr class="" style="background-color: white; color: black;">
+               <tr class="sector-color09"> 
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
                  <td class="text-center" > Ch </td>
@@ -277,7 +335,7 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr>
-               <tr class="" style="background-color: white; color: black;"> 
+               <tr class="sector-color09"> 
                  <th class="text-center"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" > LP </td>
                  <td class="text-center" > Ch </td>
@@ -287,7 +345,7 @@ footer {
                  <td class="text-center" > 52 Wk H </td>
                  <td class="text-center" > Mkt Cap </td>
                </tr> 
-               <tr class="" style="background-color: ; color: white;">
+               <tr class="sector-color09"> 
                  <th class="text-center" style="background-color: black; color: white;"><a href="#" target="_blank"> SYM </a></th>
                  <td class="text-center" style="background-color: black; color: white;" > LP </td>
                  <td class="text-center" style="background-color: black; color: white;" > Ch </td>
@@ -307,8 +365,8 @@ footer {
             <div class="row">
                 
                             <div class="col-sm">
-                            <div class="" style="width: 100%; padding-bottom: 0px; color: black;">
-                                    <h5 class="" style="text-align: center; margin-top: 10px; margin-bottom: 20px;">Visit One of Our Convenient Office Locations!</h5>
+                            <div style="width: 100%; padding-bottom: 0px; color: black;">
+                                    <h5 style="text-align: center; margin-top: 10px; margin-bottom: 20px;">Visit One of Our Convenient Office Locations!</h5>
                                     <p><ul style="text-align: left; margin-left: 140px;">
                                         <a class="link" style="color: black;" href="#">
                                         <li style="margin-bottom: 10px">Greenville RI</li>
@@ -324,8 +382,8 @@ footer {
                             </div>   
                 
                             <div class="col-sm">
-                            <div class="" style="width: 100%; padding-bottom: 0px; color: black;">
-                                    <h5 class="" style="text-align: center; margin-top: 10px; margin-bottom: 20px;">Contact us for a free consultation!</h5>
+                            <div style="width: 100%; padding-bottom: 0px; color: black;">
+                                    <h5 style="text-align: center; margin-top: 10px; margin-bottom: 20px;">Contact us for a free consultation!</h5>
                                     <p><ul style="list-style-type: none; text-align: left; margin-left: 130px;">
                                         <li style="margin-bottom: 12px"><span style="font-weight: bold"> By Phone:&nbsp&nbsp</span>
                                             <a class="link" style="color: black;" href="#">888-949-1234</a>
@@ -337,15 +395,22 @@ footer {
                             </div>  
                             </div>
                             
+                            <!-- <script>
+                                $(document).ready(function() {
+                                    $("#target01").addClass("animated animated.infinite shake");
+                                    $("#target02").addClass("animated animated.infinite shake");
+                                });
+                            </script> -->
+                            
                             <div class="col-sm">
-                            <div class="" style="width: 100%; padding-bottom: 0px; color: black;">
-                                    <h5 class="" style="text-align: center; margin-top: 10px; margin-bottom: 20px;">Join Our eNews List!</h5>
-                                    <p style="margin-bottom: 20px"><form style="text-align: center;" action="/submit-name-and-email">
-                                         <input type="text" placeholder="your name" style="text-align: center;"><br>
-                                         <input type="text" placeholder="your email" style="text-align: center;"><br>
-                                         <button type="submit">Submit</button> 
-                                    </form></p>
-                            </div>
+                                <div style="width: 100%; padding-bottom: 0px; color: black;">
+                                        <h5 style="text-align: center; margin-top: 10px; margin-bottom: 20px;">Join Our eNews List!</h5>
+                                        <p style="margin-bottom: 20px"><form style="text-align: center;" action="/submit-name-and-email">
+                                                <input type="text" placeholder="your name" class="animated shake" style="text-align: center; width: 200px; id="target01"><br>
+                                                <input type="text" placeholder="your email" class="animated shake" style="text-align: center; width: 200px; id="target02"><br>
+                                                <button type="submit" style="width: 200px;">Submit</button> 
+                                        </form></p>
+                                </div>
                             </div>
                  
                    </div> <!-- row -->       
